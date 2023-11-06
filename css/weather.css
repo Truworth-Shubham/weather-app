@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    color: #fff;
+    height: 100vh;
+    background: url('../images/mountains.svg');
+    background-color: #1f4e69;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+p{
+    margin: 0;
+    text-align: left;
+}
+h3{
+    margin: 0;
+    font-size: 3rem;
+
+}
+
+.title{
+    padding: 15px 0;
+}
+.city-name{
+    text-align: center; 
+}
+.city-name input{
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 20px;
+}
+.city-name button{
+    height: 30px;
+    border: none;
+    padding: 0px 30px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background-color: #16394c;
+    color: #fff;
+}
+.city-name button:active{
+    color: red;
+    border:1px solid #fff;
+    padding: 5px 30px;
+    height:33px;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #16394c;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    border: 4px solid #608094;
+}
+.weather-data{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.loading{
+    color: aliceblue;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading span{
+    margin-left: 15px;
+}
+
+@media (max-width: 576px) {
+    .container{
+        width: 100%;
+    }
+}
